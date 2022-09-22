@@ -1,3 +1,15 @@
+/**
+ * @file num2-1.cpp
+ * @author JooYoon Lee (dlwndbs10@gmail.com)
+ * @brief 스택을 이용하여 주여진 postfix 표기의 식을 연산하는 알고리즘을 완성하고, 실습하시오.
+ * 테스트 데이터: 20 30 * 45 3 * + 10 9 +
+ * @version 0.1
+ * @date 2022-09-22
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
+
 #include <iostream>
 #define itemType int
 

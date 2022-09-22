@@ -1,3 +1,16 @@
+/**
+ * @file num2-2.cpp
+ * @author JooYoon Lee (dlwndbs10@gmail.com)
+ * @brief 포인터를 사용하여 데이터구조 스택을 구현하고, 다른 연산 (-,/)도 포함된
+ * 다음의 data를 처리하는 알고리즘으로 수정하여 실습하시오.
+ * 테스트 데이터: 20 30 * 45 3 / + 10 * 9 -
+ * @version 0.1
+ * @date 2022-09-22
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
+
 #include <iostream>
 #define itemType int
 

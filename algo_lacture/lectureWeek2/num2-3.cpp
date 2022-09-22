@@ -1,3 +1,16 @@
+/**
+ * @file num2-3.cpp
+ * @author JooYoon Lee (dlwndbs10@gmail.com)
+ * @brief n 개의 양의 정수를 random 함수로 발생한 집단을 A라하고, m개의 양의 정수를
+ * random 함수로 발생한 집단을 B라 할 때, 2 집단 A와 B의 합집합(Union) U와
+ * 교집합(Intersection) X를 결정하고 출력하는 알고리즘을 작성하고 실습하시오. (단, m, b >=10)
+ * @version 0.1
+ * @date 2022-09-22
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
+
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
@@ -96,16 +109,11 @@ int main() {
     getResult(A, B, X);
 
     cout << "U: ";
-    while (A.getSize() != 0) {
-        cout << A.getTop() << " ";
-        A.pop();
-    }
+    A.printList();
     cout << '\n';
 
     cout << "X: ";
-    while (X.getSize() != 0) {
-        cout << X.pop() << " ";
-    }
+    X.printList();
     cout << '\n';
 }
 
