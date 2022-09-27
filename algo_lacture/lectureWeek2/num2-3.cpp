@@ -8,7 +8,6 @@
  * @date 2022-09-22
  *
  * @copyright Copyright (c) 2022
- *
  */
 
 #include <cstdlib>
