@@ -2,7 +2,7 @@
 #include <ctime>
 #include <iostream>
 #define itemType int
-#define N 10
+#define N 1000
 
 using namespace std;
 
@@ -91,7 +91,7 @@ void insertion(itemType a[], int n) {
 
 void quickSort(itemType a[], int l, int r) {
     int j;
-    if (r > l) {
+    if (r > l) {  // 분할되는 리스트의 크기가 1보다 커야 partition 진행
         j = partition(a, l, r);
         quickSort(a, l, j - 1);
         quickSort(a, j + 1, r);
@@ -114,15 +114,15 @@ int partition(itemType a[], int l, int r) {
                 compareQuick++;
             compareQuick++;
 
-            if (i >= j) {
-                compareQuick++;
+            compareQuick++;
+            if (i >= j)
                 break;
-            }
+
             swap(a, i, j);
-            changeQuick++;
+            changeQuick += 3;  // 자료 교환에 temp 이용되므로 +3
         }
         swap(a, j, l);  // pivot과 j의 자료 변경
-        changeQuick++;
+        changeQuick += 3;
     }
 
     return j;
@@ -172,5 +172,5 @@ void makeHeap(int a[], int root, int lastNode) {
     compareHeap++;
 
     a[parent] = rootValue;
-    changeHeap++;
+    changeHeap += 3;
 }

@@ -2,7 +2,7 @@
 #include <ctime>
 #include <iostream>
 #define itemType int
-#define N 10
+#define N 1000
 
 using namespace std;
 
