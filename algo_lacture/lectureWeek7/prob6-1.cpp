@@ -15,10 +15,10 @@ class BST {
         infoType info;
         struct node *l, *r;
         node(itemType k, infoType i, struct node *ll, struct node *rr) {
-            key = k;
-            info = i;
-            l = ll;
-            r = rr;
+            key = k;   // node의 key
+            info = i;  // node의 번호
+            l = ll;    // node의 왼쪽에 연결된 node pointer
+            r = rr;    // node의 오른쪽에 연결된 node pointer
         }
     };
     struct node *head, *z;
