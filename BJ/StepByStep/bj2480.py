@@ -14,6 +14,7 @@ else:
         maxDice = B
     if maxDice < C: # elif가 아닌 if여야 함. 안그러면 B를 최대라고 여기는 문제 발생
         maxDice = C
+    # maxDice = max(A,B,C)로해도 가능
     price = maxDice * 100
 
 print(price)
