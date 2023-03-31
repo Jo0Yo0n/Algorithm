@@ -14,6 +14,7 @@ int main() {
     int i = 1;
     bool flag = true;
 
+    // 입력 받기
     while (n--) {
         int t;
         cin >> t;
@@ -22,24 +23,18 @@ int main() {
     }
 
     for (auto t : arr) {
-        if (i <= t) {
-            while (i <= t) {
-                s.push(i++);
-                v.push_back('+');
-            }
-            if (s.top() == t) {
-                v.push_back('-');
-                s.pop();
-            }
+        while (i <= t) {
+            s.push(i++);
+            v.push_back('+');
+        }
+
+        if (s.top() == t) {
+            v.push_back('-');
+            s.pop();
         } else {
-            if (s.top() == t) {
-                v.push_back('-');
-                s.pop();
-            } else {
-                cout << "NO";
-                flag = false;
-                break;
-            }
+            cout << "NO";
+            flag = false;
+            break;
         }
     }
 
