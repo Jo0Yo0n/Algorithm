@@ -14,34 +14,45 @@ int main() {
     }
 
     while (m--) {
-        int target, c = 0, temp_count, flag;  // flag가 0이면 왼쪽, 1이면 오른쪽 회전
+        int target, idx = 0, temp_count, flag;  // flag가 0이면 왼쪽, 1이면 오른쪽 회전
         cin >> target;
 
         deque<int>::iterator iter = DQ.begin();
 
-        while (*iter != target) {
+        while (*iter != target) {  // target의 index 찾기
             iter++;
-            c++;
+            idx++;
         }
 
-        if (c > DQ.size() - c) {
-            temp_count = DQ.size() - c;
-            flag = 1;
-        } else {
-            temp_count = c;
-            flag = 0;
-        }
-        count += temp_count;
-
-        while (temp_count--) {
-            if (flag == 0) {
-                DQ.push_back(DQ.front());
-                DQ.pop_front();
-            } else if (flag == 1) {
+        while (DQ.front() != target) {
+            if (idx > DQ.size() - idx) {
                 DQ.push_front(DQ.back());
                 DQ.pop_back();
+            } else {
+                DQ.push_back(DQ.front());
+                DQ.pop_front();
             }
+            count++;
         }
+        // 내가 짠 버전
+        // if (idx > DQ.size() - idx) {
+        //     temp_count = DQ.size() - idx;
+        //     flag = 1;
+        // } else {
+        //     temp_count = idx;
+        //     flag = 0;
+        // }
+        // count += temp_count;
+
+        // while (temp_count--) {
+        //     if (flag == 0) {
+        //         DQ.push_back(DQ.front());
+        //         DQ.pop_front();
+        //     } else if (flag == 1) {
+        //         DQ.push_front(DQ.back());
+        //         DQ.pop_back();
+        //     }
+        // }
         DQ.pop_front();
     }
     cout << count;
