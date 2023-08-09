@@ -2,37 +2,49 @@
 using namespace std;
 #define X first
 #define Y second
-string board[102];
-int dist[102][102];
-int n, m;
+int board[1002][1002];
+int dist[1002][1002];
 int dx[4] = {1, 0, -1, 0};
 int dy[4] = {0, 1, 0, -1};
+int n, m;
+
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    cin >> n >> m;
-    for (int i = 0; i < n; i++) {
-        cin >> board[i];
-    }
+
+    cin >> m >> n;
+    queue<pair<int, int>> Q;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            dist[i][j] = -1;
+            cin >> board[i][j];
+
+            if (board[i][j] == 1) Q.push({i, j});
+            if (board[i][j] == 0) dist[i][j] = -1;
         }
     }
-    queue<pair<int, int>> Q;
-    Q.push({0, 0});
-    dist[0][0] = 1;
     while (!Q.empty()) {
         pair<int, int> cur = Q.front();
         Q.pop();
         for (int dir = 0; dir < 4; dir++) {
             int nx = cur.X + dx[dir];
             int ny = cur.Y + dy[dir];
+
             if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-            if (dist[nx][ny] >= 0 || board[nx][ny] != '1') continue;
+            if (dist[nx][ny] >= 0) continue;
             dist[nx][ny] = dist[cur.X][cur.Y] + 1;
             Q.push({nx, ny});
         }
     }
-    cout << dist[n - 1][m - 1];
+
+    int date = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (dist[i][j] == -1) {
+                cout << -1 << '\n';
+                return 0;
+            }
+            if (date < dist[i][j]) date = dist[i][j];
+        }
+    }
+    cout << date << '\n';
 }
