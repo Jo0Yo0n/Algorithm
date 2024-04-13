@@ -11,7 +11,5 @@ class Solution {
             start++;
             end--;
         }
-
-        System.out.println(s);
     }
 }
