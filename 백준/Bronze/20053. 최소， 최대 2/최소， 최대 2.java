@@ -26,13 +26,8 @@ public class Main {
 
             for(int j = 0; j < N; j++) {
                 
-                if (arr[j] < min) {
-                    min = arr[j];
-                }
-
-                if (arr[j] > max) {
-                    max = arr[j];
-                }
+                min = Math.min(min, arr[j]);
+                max = Math.max(max, arr[j]);
             }
 
             sb.append(min).append(" ").append(max).append("\n");
