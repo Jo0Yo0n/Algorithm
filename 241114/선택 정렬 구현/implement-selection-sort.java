@@ -23,9 +23,7 @@ public class Main {
 
                 if(arr[min] > arr[j]) {
 
-                    int temp = min;
                     min = j;
-                    j = temp;
                 }
             }
             
