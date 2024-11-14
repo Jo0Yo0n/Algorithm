@@ -19,12 +19,7 @@ public class Main {
             bread.add(str.charAt(i));
         }
 
-        ListIterator li = bread.listIterator();
-
-        // iterator를 맨 뒤로 이동
-        while(li.hasNext()) {
-            li.next();
-        }
+        ListIterator li = bread.listIterator(bread.size());
 
         for(int i = 0; i < m; i++) {
 
@@ -61,9 +56,11 @@ public class Main {
         }
 
         StringBuilder sb = new StringBuilder();
+        ListIterator li2 = bread.listIterator();
+
         for(int i = 0; i < bread.size(); i++) {
             
-            sb.append(bread.get(i));
+            sb.append(li2.next());
         }
 
         System.out.println(sb);
