@@ -22,7 +22,7 @@ public class Main {
 
             int arrCopy = arr.get(i);
             int kp = 1;
-            while(arrCopy > 10) {
+            while(arrCopy >= 10) {
 
                 arrCopy /= 10;
                 kp++;
