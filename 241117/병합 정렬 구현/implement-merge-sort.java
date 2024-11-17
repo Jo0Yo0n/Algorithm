@@ -3,15 +3,15 @@ import java.io.*;
 
 public class Main {
 
-    static int[] arr;
-
+    static int[] sortedArr;
+    
     public static void main(String[] args) throws Exception {
         
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
 
-        arr = new int[n];
+        int[] arr = new int[n];
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         for(int i = 0; i < n; i++) {
@@ -19,6 +19,7 @@ public class Main {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
+        sortedArr = new int[arr.length];
         mergeSort(arr, 0, n - 1);
 
         StringBuilder sb = new StringBuilder();
@@ -46,7 +47,6 @@ public class Main {
         int i = low;
         int j = mid + 1;
         int k = low;
-        int[] sortedArr = new int[arr.length];
 
         while(i <= mid && j <= high) {
 
