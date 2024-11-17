@@ -2,13 +2,16 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
+
+    static int[] arr;
+
     public static void main(String[] args) throws Exception {
         
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
 
-        int[] arr = new int[n];
+        arr = new int[n];
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         for(int i = 0; i < n; i++) {
