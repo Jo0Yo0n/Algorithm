@@ -9,6 +9,8 @@ public class Main {
         String input = br.readLine();
 
         Stack<Character> stack = new Stack<>();
+
+        StringBuilder sb = new StringBuilder();
         
         for(int i = 0; i < input.length(); i++) {
 
@@ -16,13 +18,19 @@ public class Main {
 
                 stack.push('(');
             }
-            if(!stack.isEmpty() && input.charAt(i) == ')') {
+            else {
+
+                if(stack.isEmpty()) {
+
+                    sb.append("No");
+                    System.out.println(sb);
+
+                    return;
+                }
 
                 stack.pop();
             }
         }
-
-        StringBuilder sb = new StringBuilder();
 
         sb.append(stack.isEmpty() ? "Yes" : "No");
 
