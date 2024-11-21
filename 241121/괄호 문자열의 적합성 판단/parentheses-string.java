@@ -16,7 +16,7 @@ public class Main {
 
                 stack.push('(');
             }
-            else {
+            if(!stack.isEmpty() && input.charAt(i) == ')') {
 
                 stack.pop();
             }
