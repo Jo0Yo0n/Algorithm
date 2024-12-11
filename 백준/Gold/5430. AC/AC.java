@@ -13,7 +13,7 @@ public class Main {
 
             String p = br.readLine();
             int n = Integer.parseInt(br.readLine());
-            String[] arr = br.readLine().split(",");
+            StringTokenizer st = new StringTokenizer(br.readLine(), "[],");
             Deque<Integer> deque = new ArrayDeque<>();
             int d = 0;
             boolean isReversed = false;
@@ -31,22 +31,7 @@ public class Main {
 
             for(int j = 0; j < n; j++) {
 
-                if(j == 0) {
-                    
-                    if(n != 1) {
-                        deque.addLast(Integer.parseInt(arr[0].substring(1)));
-                    }
-                    else {
-                        deque.addLast(Integer.parseInt(arr[0].substring(1, arr[0].length() - 1)));
-                    }
-                }
-                else if(j == n - 1) {
-
-                    deque.addLast(Integer.parseInt(arr[j].substring(0, arr[j].length() - 1)));
-                }
-                else {
-                    deque.addLast(Integer.parseInt(arr[j]));
-                }
+                deque.addLast(Integer.parseInt(st.nextToken()));
             }
 
             for(int j = 0; j < p.length(); j++) {
