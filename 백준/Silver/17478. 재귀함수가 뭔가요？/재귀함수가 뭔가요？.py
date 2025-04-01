@@ -1,9 +1,5 @@
-bar = "____"
-
 def func(n, c):
-    str = ""
-    for _ in range(c):
-        str += bar
+    str = "____" * c
     
     print(str + "\"재귀함수가 뭔가요?\"")
     if n != 0:
