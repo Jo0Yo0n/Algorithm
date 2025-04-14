@@ -1,22 +1,22 @@
 n, m = map(int, input().split())
 
-lst = [i for i in range(1, n + 1)]
+visited = [False for _ in range(n + 1)]
+
+arr = []
 
 
-def solve(n, m, seq):
-    if len(seq) == m:
-        print(" ".join(map(str, seq)))
+def solve(cnt):
+    if cnt == m:
+        print(*arr)
         return
 
-    global lst
-    lst_set = set(lst)
-    before_set = set(seq)
-    sub = list(lst_set - before_set)
-
-    for i in range(len(sub)):
-        copy = seq[:]
-        copy.append(sub[i])
-        solve(n, m, copy)
+    for i in range(1, n + 1):
+        if not visited[i]:
+            visited[i] = True
+            arr.append(i)
+            solve(cnt + 1)
+            visited[i] = False
+            arr.pop()
 
 
-solve(n, m, [])
+solve(0)
