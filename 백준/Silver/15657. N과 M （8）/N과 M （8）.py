@@ -1,9 +1,9 @@
-def solve(start, lst):
+def solve(index, lst):
     if len(lst) == m:
         print(*lst)
         return
 
-    for i in range(start, n):
+    for i in range(index, n):
         lst.append(arr[i])
         solve(i, lst)
         lst.pop()
