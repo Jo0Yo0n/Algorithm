@@ -7,13 +7,13 @@ class Solution:
             else:
                 if len(stack) == 0:
                     return False
-                elif c == ')' and stack[-1] == '(':
-                    stack.pop()
-                elif c == '}' and stack[-1] == '{':
-                    stack.pop()
-                elif c == ']' and stack[-1] == '[':
-                    stack.pop()
-                else:
+                
+                top = stack.pop()
+                if top == '(' and c != ')':
+                    return False
+                elif top == '{' and c != '}':
+                    return False
+                elif top == '[' and c != ']':
                     return False
         
         return len(stack) == 0
