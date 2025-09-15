@@ -17,6 +17,4 @@ class Solution:
         self.recursive(node.left)
         self.recursive(node.right)
         
-        temp = node.left
-        node.left = node.right
-        node.right = temp
+        node.left, node.right = node.right, node.left
