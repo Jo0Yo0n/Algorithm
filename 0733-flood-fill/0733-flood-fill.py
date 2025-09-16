@@ -3,6 +3,9 @@ import queue
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
         start_color = image[sr][sc]
+        if start_color == color:
+            return image
+
         dx = [-1, 0, 1, 0]
         dy = [0, 1, 0, -1]
         row_size = len(image)
