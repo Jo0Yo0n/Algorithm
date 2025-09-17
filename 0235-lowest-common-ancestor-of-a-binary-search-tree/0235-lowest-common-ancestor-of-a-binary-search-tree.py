@@ -11,9 +11,7 @@ class Solution:
             p, q = q, p
         
         while root:
-            if p.val < root.val < q.val:
-                return root
-            elif root.val > p.val and root.val > q.val:
+            if root.val > p.val and root.val > q.val:
                 root = root.left
             elif root.val < p.val and root.val < q.val:
                 root = root.right
