@@ -1,33 +1,27 @@
 class MyQueue:
 
     def __init__(self):
-        self.lst1 = []
-        self.lst2 = []
+        self.input = []
+        self.output = []
         
 
     def push(self, x: int) -> None:
-        self.lst1.append(x)
+        self.input.append(x)
 
     def pop(self) -> int:
-        if not self.lst2:
-            while self.lst1:
-                self.lst2.append(self.lst1.pop())
-
-        return self.lst2.pop()
+        self.peek()
+        return self.output.pop()
         
 
     def peek(self) -> int:
-        if not self.lst2:
-            while self.lst1:
-                self.lst2.append(self.lst1.pop())
+        if not self.output:
+            while self.input:
+                self.output.append(self.input.pop())
         
-        return self.lst2[-1]
+        return self.output[-1]
 
     def empty(self) -> bool:
-        if not self.lst1 and not self.lst2:
-            return True
-        else:
-            return False
+        return not self.input and not self.output
         
 
 
