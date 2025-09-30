@@ -3,16 +3,14 @@
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
-        return self.find(1, n)
-    
-    def find(self, low, high):
-        while low < high:
-            middle = (high + low) // 2
-            if not isBadVersion(middle):
-                low = middle + 1
-                if isBadVersion(middle + 1):
-                    return middle + 1
-            else:
-                high = middle - 1
+        left = 1
+        right = n
 
-        return low if isBadVersion(low) else low + 1
+        while left < right:
+            middle = (left + right) // 2
+            if isBadVersion(middle):
+                right = middle
+            else:
+                left = middle + 1
+        
+        return left
