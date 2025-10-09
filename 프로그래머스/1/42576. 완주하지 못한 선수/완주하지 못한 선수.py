@@ -1,10 +1,7 @@
 def solution(participant, completion):
     dic = {}
     for p in participant:
-        if p in dic:
-            dic[p] += 1
-        else:
-            dic[p] = 1
+        dic[p] = dic.get(p, 0) + 1
     
     for c in completion:
         if dic[c] == 1:
