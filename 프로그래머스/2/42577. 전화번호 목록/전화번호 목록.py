@@ -1,16 +1,9 @@
 def solution(phone_book):
-    phone_set = set()
-    phone_len = set()
+    phone_set = set(phone_book)
     
-    for e in phone_book:
-        phone_set.add(e)
-        phone_len.add(len(e))
-    
-    for e in phone_len:
-        for p in phone_book:
-            if len(p) < e:
-                continue
-            if len(p) != e and p[:e] in phone_set:
+    for pn in phone_book:
+        for i in range(1, len(pn)):
+            if pn[:i] in phone_set:
                 return False
-            
+    
     return True
