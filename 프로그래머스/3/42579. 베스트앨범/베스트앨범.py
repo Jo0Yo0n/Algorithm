@@ -8,7 +8,7 @@ def solution(genres, plays):
         
     answer = []
     
-    sorted_genre = sorted(genre_total_plays.keys(), key=lambda g: genre_total_plays[g], reverse = True)
+    sorted_genre = sorted(genre_total_plays.keys(), key=lambda g: -genre_total_plays[g])
     
     for g in sorted_genre:
         sorted_songs = sorted(genre_songs[g], key=lambda x: (-x[0], x[1]))
