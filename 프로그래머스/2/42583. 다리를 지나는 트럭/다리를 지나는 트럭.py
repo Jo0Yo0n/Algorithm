@@ -13,7 +13,7 @@ def solution(bridge_length, weight, truck_weights):
             b[1] -= 1
     
     while truck_queue or bridge:
-        while(bridge and bridge[0][1] == 0):
+        if bridge and bridge[0][1] == 0:
             bridge.pop(0)
         
         if truck_queue and (weight - cur_bridge_weight()) >= truck_queue[0][0]:
