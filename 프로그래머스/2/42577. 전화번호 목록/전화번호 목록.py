@@ -1,9 +1,11 @@
 def solution(phone_book):
-    phone_set = set(phone_book)
+    dict_phone = set(phone_book)
     
-    for pn in phone_book:
-        for i in range(1, len(pn)):
-            if pn[:i] in phone_set:
+    for phone in phone_book:
+        for i in range(1, len(phone)):
+            if phone[0:i] in dict_phone:
                 return False
-    
+            
+
     return True
+            
