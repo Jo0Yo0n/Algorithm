@@ -1,19 +1,22 @@
+from collections import defaultdict
+
 def solution(genres, plays):
-    genre_total_plays = {}
-    genre_songs = {}
+    genre_count_dict = defaultdict(int)
+    genre_list_dict = defaultdict(list)
     
-    for i, (g, p) in enumerate(zip(genres, plays)):
-        genre_total_plays[g] = genre_total_plays.get(g, 0) + p
-        genre_songs.setdefault(g, []).append((p, i))
+    for i in range(len(genres)):
+        genre_count_dict[genres[i]] += plays[i]
+        genre_list_dict[genres[i]].append((plays[i], i))
         
+    genre_count_list = list(genre_count_dict.items())
+    genre_count_list.sort(key=lambda x: -x[1])
+    for genre_list in genre_list_dict.values():
+        genre_list.sort(key=lambda x: (-x[0], x[1]))
+    
     answer = []
     
-    sorted_genre = sorted(genre_total_plays.keys(), key=lambda g: -genre_total_plays[g])
-    
-    for g in sorted_genre:
-        sorted_songs = sorted(genre_songs[g], key=lambda x: (-x[0], x[1]))
-        
-        for s in sorted_songs[:2]:
-            answer.append(s[1])
+    for genre, _ in genre_count_list:
+        for i in range(2 if len(genre_list_dict[genre]) >= 2 else 1):
+            answer.append(genre_list_dict[genre][i][1])
             
     return answer
