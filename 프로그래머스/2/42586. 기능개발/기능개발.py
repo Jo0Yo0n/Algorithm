@@ -1,20 +1,25 @@
 from collections import deque
+import math
 
 def solution(progresses, speeds):
-    pgdq = deque(progresses)
-    spdq = deque(speeds)
-    ans = []
+    p_dq = deque(progresses)
+    s_dq = deque(speeds)
+    answer = []
     
-    while pgdq:
-        for i in range(len(pgdq)):
-            pgdq[i] += spdq[i]
-        
-        c = 0
-        while pgdq and pgdq[0] >= 100:
-            pgdq.popleft()
-            spdq.popleft()
-            c += 1
-        if c:
-            ans.append(c)  
-        
-    return ans
+    count = 0
+    day = 0
+    for p, s in zip(p_dq, s_dq):
+        if day == 0:
+            day = math.ceil((100 - p) / s)
+            count += 1
+        elif p + (s * day) >= 100:
+            count += 1
+        else:
+            answer.append(count)
+            count = 1
+            day = math.ceil((100 - p) / s)
+            
+    if count > 0:
+        answer.append(count)
+    
+    return answer
