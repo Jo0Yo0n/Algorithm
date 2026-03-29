@@ -3,10 +3,9 @@ def solution(s):
     for e in s:
         if e == '(':
             stack.append('(')
+        elif len(stack) != 0:
+            stack.pop()
         else:
-            if not stack:
-                return False
-            else:
-                stack.pop()
-    
-    return len(stack) == 0
+            return False
+        
+    return True if len(stack) == 0 else False
