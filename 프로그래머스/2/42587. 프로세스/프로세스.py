@@ -1,13 +1,20 @@
+from collections import deque
+
 def solution(priorities, location):
-    q = [(i, p) for (i, p) in enumerate(priorities)]
-    ans = 0
+    dq = deque(zip(priorities, range(len(priorities))))
+    count = 1
     
-    while True:
-        temp = q.pop(0)
-        if any(temp[1] < other for (_, other) in q):
-            q.append(temp)
-            
-        else:
-            ans += 1
-            if temp[0] == location:
-                return ans
+    while dq:
+        p, l = dq[0]
+        
+        for i in range(1, len(dq)):
+            if dq[i][0] > p:
+                dq.append(dq.popleft())
+                break
+        
+        if l == dq[0][1]:
+            if l == location:
+                return count
+            else:
+                dq.popleft()
+                count += 1
