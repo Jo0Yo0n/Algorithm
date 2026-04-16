@@ -1,23 +1,24 @@
-import heapq
+from collections import deque
 
 def solution(jobs):
-    clock = 0
-    jobs = [(j[1], j[0]) for j in jobs]
-    jobs.sort(key = lambda x: -x[1])
-    heap = []
-    duration_sum = 0
-    count = len(jobs)
+    time = 0
+    time_sum = 0
+    num_jobs = len(jobs)
     
-    while jobs or heap:
-        while jobs and jobs[-1][1] <= clock:
-            heapq.heappush(heap, jobs.pop())
-            
-        if heap:
-            job = heapq.heappop(heap)
-            clock += job[0]
-            duration_sum += clock - job[1]
-        else:
-            clock = jobs[-1][1]
+    while jobs:
+        sorted_jobs = deque()
+        for idx, (s, l) in enumerate(jobs):
+            if s <= time:
+                sorted_jobs.append([idx, s, l])
+        if not sorted_jobs:
+            time += 1
+            continue
         
-    
-    return duration_sum // count
+        sorted_jobs = deque(sorted(sorted_jobs, key=lambda x: (x[2], x[1], x[0])))
+        
+        picked_job = sorted_jobs.popleft()
+        time += picked_job[2]
+        time_sum += time - picked_job[1]
+        jobs.pop(picked_job[0])
+        
+    return time_sum // num_jobs
