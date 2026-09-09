@@ -21,6 +21,7 @@
 | [0020-valid-parentheses](https://github.com/Jo0Yo0n/Algorithm/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/Jo0Yo0n/Algorithm/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/Jo0Yo0n/Algorithm/tree/master/0242-valid-anagram) |
+| [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Jo0Yo0n/Algorithm/tree/main/1768-merge-strings-alternately/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
@@ -99,4 +100,16 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0278-first-bad-version](https://github.com/Jo0Yo0n/Algorithm/tree/master/0278-first-bad-version) |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
+## Euclidean Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
+## Greatest Common Divisor
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 <!---LeetCode Topics End-->
