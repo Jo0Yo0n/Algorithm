@@ -7,6 +7,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Jo0Yo0n/Algorithm/tree/master/0001-two-sum) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Jo0Yo0n/Algorithm/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0605-can-place-flowers](https://github.com/Jo0Yo0n/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 | [0733-flood-fill](https://github.com/Jo0Yo0n/Algorithm/tree/master/0733-flood-fill) |
 | [0792-binary-search](https://github.com/Jo0Yo0n/Algorithm/tree/master/0792-binary-search) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Jo0Yo0n/Algorithm/tree/main/1431-kids-with-the-greatest-number-of-candies/) | Easy |
@@ -113,4 +114,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0605-can-place-flowers](https://github.com/Jo0Yo0n/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 <!---LeetCode Topics End-->
