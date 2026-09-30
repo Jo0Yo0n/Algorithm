@@ -23,6 +23,7 @@
 | [0020-valid-parentheses](https://github.com/Jo0Yo0n/Algorithm/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/Jo0Yo0n/Algorithm/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/Jo0Yo0n/Algorithm/tree/master/0242-valid-anagram) |
+| [0345-reverse-vowels-of-a-string](https://github.com/Jo0Yo0n/Algorithm/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Jo0Yo0n/Algorithm/tree/main/1768-merge-strings-alternately/) | Easy |
 ## Stack
@@ -48,6 +49,7 @@
 | ------- | ------- |
 | [0125-valid-palindrome](https://github.com/Jo0Yo0n/Algorithm/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/Jo0Yo0n/Algorithm/tree/master/0141-linked-list-cycle) |
+| [0345-reverse-vowels-of-a-string](https://github.com/Jo0Yo0n/Algorithm/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Jo0Yo0n/Algorithm/tree/main/1768-merge-strings-alternately/) | Easy |
 ## Tree
 | Problem Name | Difficulty |
