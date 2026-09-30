@@ -8,7 +8,7 @@ class Solution {
 
         for(int i = 0; i < s.length(); i++) {
 
-            if (vowels.contains(String.valueOf(s.charAt(i)))) {
+            if (vowels.indexOf(s.charAt(i)) != -1) {
                 vowelsArray.add(s.charAt(i));
                 indexArray.add(i);
             }
