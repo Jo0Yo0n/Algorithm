@@ -8,6 +8,7 @@
 | [0001-two-sum](https://github.com/Jo0Yo0n/Algorithm/tree/master/0001-two-sum) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Jo0Yo0n/Algorithm/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0238-product-of-array-except-self](https://github.com/Jo0Yo0n/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
+| [0334-increasing-triplet-subsequence](https://github.com/Jo0Yo0n/Algorithm/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0605-can-place-flowers](https://github.com/Jo0Yo0n/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 | [0733-flood-fill](https://github.com/Jo0Yo0n/Algorithm/tree/master/0733-flood-fill) |
 | [0792-binary-search](https://github.com/Jo0Yo0n/Algorithm/tree/master/0792-binary-search) |
@@ -122,9 +123,14 @@
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0334-increasing-triplet-subsequence](https://github.com/Jo0Yo0n/Algorithm/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0605-can-place-flowers](https://github.com/Jo0Yo0n/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/Jo0Yo0n/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
+## Longest Increasing Subsequence
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0334-increasing-triplet-subsequence](https://github.com/Jo0Yo0n/Algorithm/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 <!---LeetCode Topics End-->
