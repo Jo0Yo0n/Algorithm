@@ -15,7 +15,7 @@ class Solution {
 
             if (zp < np) {
                 nums[zp] = nums[np];
-                nums[np++] = 0;
+                nums[np] = 0;
             } else {
                 np++;
             }
