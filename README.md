@@ -28,6 +28,7 @@
 | [0151-reverse-words-in-a-string](https://github.com/Jo0Yo0n/Algorithm/tree/master/0151-reverse-words-in-a-string) |
 | [0242-valid-anagram](https://github.com/Jo0Yo0n/Algorithm/tree/master/0242-valid-anagram) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Jo0Yo0n/Algorithm/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
+| [0392-is-subsequence](https://github.com/Jo0Yo0n/Algorithm/tree/main/0392-is-subsequence/) | Easy |
 | [0443-string-compression](https://github.com/Jo0Yo0n/Algorithm/tree/main/0443-string-compression/) | Medium |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Jo0Yo0n/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Jo0Yo0n/Algorithm/tree/main/1768-merge-strings-alternately/) | Easy |
@@ -49,6 +50,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Jo0Yo0n/Algorithm/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0392-is-subsequence](https://github.com/Jo0Yo0n/Algorithm/tree/main/0392-is-subsequence/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -57,6 +59,7 @@
 | [0151-reverse-words-in-a-string](https://github.com/Jo0Yo0n/Algorithm/tree/master/0151-reverse-words-in-a-string) |
 | [0283-move-zeroes](https://github.com/Jo0Yo0n/Algorithm/tree/main/0283-move-zeroes/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/Jo0Yo0n/Algorithm/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
+| [0392-is-subsequence](https://github.com/Jo0Yo0n/Algorithm/tree/main/0392-is-subsequence/) | Easy |
 | [0443-string-compression](https://github.com/Jo0Yo0n/Algorithm/tree/main/0443-string-compression/) | Medium |
 | [1768-merge-strings-alternately](https://github.com/Jo0Yo0n/Algorithm/tree/main/1768-merge-strings-alternately/) | Easy |
 ## Tree
