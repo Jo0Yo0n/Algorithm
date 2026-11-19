@@ -9,8 +9,7 @@ class Solution {
             } else {
                 count++;
                 if (count <= k) {
-                    int tmp = right - left + 1;
-                    max = max > tmp ? max : tmp;
+                    max = Math.max(max, right - left + 1);
                 }
             }
             while(count > k) {
