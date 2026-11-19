@@ -15,6 +15,7 @@
 | [0643-maximum-average-subarray-i](https://github.com/Jo0Yo0n/Algorithm/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0733-flood-fill](https://github.com/Jo0Yo0n/Algorithm/tree/master/0733-flood-fill) |
 | [0792-binary-search](https://github.com/Jo0Yo0n/Algorithm/tree/master/0792-binary-search) |
+| [1004-max-consecutive-ones-iii](https://github.com/Jo0Yo0n/Algorithm/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Jo0Yo0n/Algorithm/tree/main/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [1679-max-number-of-k-sum-pairs](https://github.com/Jo0Yo0n/Algorithm/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 ## Hash Table
@@ -103,6 +104,7 @@
 | ------- | ------- |
 | [0278-first-bad-version](https://github.com/Jo0Yo0n/Algorithm/tree/master/0278-first-bad-version) |
 | [0792-binary-search](https://github.com/Jo0Yo0n/Algorithm/tree/master/0792-binary-search) |
+| [1004-max-consecutive-ones-iii](https://github.com/Jo0Yo0n/Algorithm/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -145,6 +147,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/Jo0Yo0n/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/Jo0Yo0n/Algorithm/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 ## Longest Increasing Subsequence
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -153,5 +156,6 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/Jo0Yo0n/Algorithm/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [1004-max-consecutive-ones-iii](https://github.com/Jo0Yo0n/Algorithm/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Jo0Yo0n/Algorithm/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 <!---LeetCode Topics End-->
