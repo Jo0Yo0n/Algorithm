@@ -7,16 +7,14 @@ class Solution {
                 count++;
             }
 
-            while(count > k) {
+            if(count > k) {
                 if(nums[left] == 0) {
                     count--;
                 }
                 left++;
             }
-
-            max = Math.max(max, right - left + 1);
         }
 
-        return max;
+        return nums.length - left;
     }
 }
